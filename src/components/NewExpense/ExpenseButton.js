@@ -1,12 +1,8 @@
-import React from 'react'
-import './NewExpense.css'
+import React from "react";
+import "./NewExpense.css";
 
-const ExpenseButton = () => {
-    return (
-        <div className="new-expense">
-            <button>Add Expense</button>
-        </div>
-    )
-}
+const ExpenseButton = (props) => {
+  return <button onClick={()=>props.onClickHandler(true)}>Add New Expense</button>;
+};
 
-export default ExpenseButton
+export default ExpenseButton;
